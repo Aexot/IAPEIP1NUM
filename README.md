@@ -11,9 +11,10 @@ Nous utilisons les librairies suivantes :
 
 ## Pré-requis
 - Python (Conseillé 3.10, ou dernière version)
-- scikit-learn
-- pandas
-- matplotlib
+	
+	- scikit-learn
+	- pandas
+	- matplotlib
 
 
 ## Installation or Getting Started
