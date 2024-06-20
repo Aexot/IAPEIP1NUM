@@ -258,12 +258,17 @@ with open("enfinnnn.csv", "w") as f2:
 
 # Recherche des paramètres
 """
-print("-"*20)
-for mdepth in [1,2,3,4,5,"6",7,8,9,10,11,12,13,14]:
-    model = DecisionTreeClassifier(max_depth=mdepth)
-    model = model.fit(X_train, y_train)
-    print(model.score(X_test, y_test))
 ev = []
+print("-"*20)
+for i in range(100):
+    val =[]
+    for mdepth in [1,2,3,4,5,6,7,8,9,10,11,12,13,14]:
+        model = DecisionTreeClassifier(max_depth=mdepth)
+        model = model.fit(X_train, y_train)
+        val.append(model.score(X_test, y_test)))
+    ev.append(val)
+    
+moy = []
 for i in range(100):
 
     val =[]
@@ -271,7 +276,7 @@ for i in range(100):
         model = DecisionTreeClassifier(criterion=criter)
         model = model.fit(X_train, y_train)
         val.append(model.score(X_test, y_test))
-    ev.append(val)
+    moy.append(val)
 
 print(ev)
 vals=[0,0,0,0,0,0,0,0,0,0,0,0,0,0]
@@ -279,9 +284,33 @@ for it in ev:
     for i in range(len(it)):
         vals[i] = (vals[i] + it[i])/2
 print(vals)
-print(max(vals))"""
+print(max(vals))
+
+print(moy)
+valmoy = [0,0,0]
+for it in moy:
+    for i in range(len(it)):
+        valmoy[i] = (valmoy[i] + it[i])/2
+        
+ev = []
+print("-"*20)
+for i in range(100):
+    val =[]
+    for mleaf in [1,2,3,4,5,6,7,8,9,10,11,12,13,14]:
+        model = DecisionTreeClassifier(min_samples_leaf=mleaf)
+        model = model.fit(X_train, y_train)
+        val.append(model.score(X_test, y_test)))
+    ev.append(val)
+print(ev)
+vals=[0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+for it in ev:
+    for i in range(len(it)):
+        vals[i] = (vals[i] + it[i])/2
+print(vals)
+print(max(vals))
+
 # KFold, n'a pas fonctionné comme voulu car les scores était plus bas que prévu
-"""for i, (train_index, test_index) in enumerate(kf.split(dtcsv)):
+for i, (train_index, test_index) in enumerate(kf.split(dtcsv)):
     print(f"Fold {i}:")
     print(f" Train: index={train_index}")
     print(f" Test: index={test_index}")
@@ -296,7 +325,7 @@ print(max(vals))"""
     print("Accuracy :", accuracy)
     print("Precision :", precision)
     print("Recall :", recall)
-    print("F1 Score: :", f1)"""
+    print("F1 Score: :", f1)
 
 
 # Deux manières de le faire, la première permets de le récuperer dans une variable
@@ -304,7 +333,7 @@ print(max(vals))"""
 #tree_rules = export_text(model,feature_names = ['prod1AAM', 'prod2AAM', 'react1AAM', 'react2AAM'])
 #print(tree_rules)
 # 2eme méthode
-"""
+
 def tree_to_code(tree, feature_names):
     tree_ = tree.tree_
     feature_name = [
