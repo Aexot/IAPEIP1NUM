@@ -33,8 +33,8 @@ RAW Files :
 	https://pypi.org/project/matplotlib/#files
 
 ## Installation du projet :
+https://git-scm.com/book/fr/v2/Démarrage-rapide-Installation-de-Git
 
-    https://git-scm.com/book/fr/v2/Démarrage-rapide-Installation-de-Git
     git clone https://github.com/Aexot/IAPEIP1NUM
 
 ## Utilisation 
