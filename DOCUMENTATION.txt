@@ -1,0 +1,10 @@
+Documentation des élements utilisés :
+	
+Scikit learn :	
+https://scikit-learn.org/stable/
+
+Matplotlib :
+https://matplotlib.org/stable/index.html#learn
+
+Pandas :
+https://pandas.pydata.org/docs/
