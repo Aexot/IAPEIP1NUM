@@ -21,6 +21,7 @@ Nous utilisons les librairies suivantes :
 Installations des pré-requis :
 Python : https://www.python.org/downloads/
 Librairies (en utilisant pip)
+	
 	pip install scikit-learn
 	pip install pandas
 	pip install matplotlib
