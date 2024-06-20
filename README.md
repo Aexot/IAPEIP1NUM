@@ -16,7 +16,7 @@ Nous utilisons les librairies suivantes :
 	- matplotlib
 
 
-## Installation or Getting Started
+## Installation 
 
 Installations des pré-requis :
 Python : https://www.python.org/downloads/
