@@ -26,7 +26,8 @@ Librairies (en utilisant pip)
 	pip install pandas
 	pip install matplotlib
 
-	RAW Files :
+RAW Files :
+
 	https://pypi.org/project/scikit-learn/#files
 	https://pypi.org/project/pandas/#files
 	https://pypi.org/project/matplotlib/#files
