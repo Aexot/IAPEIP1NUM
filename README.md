@@ -10,8 +10,8 @@ Nous utilisons les librairies suivantes :
 	- numpy et re (pour tranformer les règles de l'arbre de décision en règles CLIPS)
 
 ## Pré-requis
-- Python (Conseillé 3.10, ou dernière version)
-	
+
+	- Python (Conseillé 3.10, ou dernière version)
 	- scikit-learn
 	- pandas
 	- matplotlib
